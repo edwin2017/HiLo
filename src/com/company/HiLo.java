@@ -7,7 +7,7 @@ public class HiLo {
     public static void main(String... args) {
         Scanner scan = new Scanner(System.in);
 // Генерация случайного числа
-        int theNumber = (int)(Math.random()*100+1);
+        int theNumber = (int) (Math.random() * 100 + 1);
 //        System.out.println(theNumber);
         int guess;
         int count = 0;
@@ -17,9 +17,9 @@ public class HiLo {
             System.out.println("You guess " + guess);
             if (guess > theNumber)
                 System.out.println("try smaller");
-            else if(guess<theNumber)
+            else if (guess < theNumber)
                 System.out.println("try bigger");
-            else if(guess == theNumber)
+            else
                 System.out.println("Congratulations! You win!!! :)");
             count++;
         } while (guess != theNumber);
